@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+    android:id="@+id/rl"
+android:layout_height="match_parent"
+tools:context=".java.LoginActivity">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/fragmentcont"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <pl.droidsonroids.gif.GifTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ee"/>
+</RelativeLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparentprimarytint"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="@dimen/twenty"
+        android:src="@drawable/ic_star_rating"
+        />
+
+
+        <EditText
+            android:id="@+id/uid"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="@dimen/draw_padding"
+            android:drawableTint="@color/colorAccent"
+            android:hint="Employee Code"
+            android:inputType="text"
+            android:maxLength="5"
+            android:paddingLeft="@dimen/fourteen"
+            android:paddingTop="@dimen/twelve"
+            android:paddingRight="@dimen/twelve"
+            android:paddingBottom="@dimen/twelve"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeStepGranularity="1sp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:drawablePadding="@dimen/fifteen"
+            android:drawableTint="@color/colorAccent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/fourteen"
+            android:paddingTop="@dimen/twelve"
+            android:paddingRight="@dimen/twelve"
+            android:paddingBottom="@dimen/twelve"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeStepGranularity="1sp"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+
+
+        <EditText
+            android:id="@+id/wdate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/ic_calender"
+            android:drawablePadding="@dimen/fifteen"
+            android:drawableTint="@color/colorAccent"
+            android:hint="Working Date"
+            android:inputType="text"
+            android:paddingLeft="@dimen/fourteen"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeMaxTextSize="14sp"
+            android:autoSizeStepGranularity="1sp"
+            android:paddingTop="@dimen/twelve"
+            android:paddingRight="@dimen/twelve"
+            android:paddingBottom="@dimen/twelve"
+            android:textColor="@color/colorAccent"
+            android:textColorHint="@color/colorAccent" />
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/login"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty"
+            android:layout_marginBottom="60dp"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="@dimen/eight"
+            app:rippleColor="@color/colorAccent"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="1sp"
+            android:autoSizeMaxTextSize="18sp"
+            android:autoSizeStepGranularity="1sp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

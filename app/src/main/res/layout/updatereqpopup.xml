@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_warning"
+                android:padding="10dp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/textcolorwhite"
+                android:textStyle="bold"
+                android:text="New upgrade available"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="8">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:id="@+id/questiontxt"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="We have noticed you are using an \nolder version of the app.\nWe recommend you upgrade to \n new version."
+                />
+        </LinearLayout>
+        <android.support.design.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/sixteen"
+            android:text="UPDATE"
+            android:textStyle="bold"
+            android:id="@+id/update"
+            android:textColor="@color/colorPrimary"
+            app:rippleColor="@color/colorAccent"/>
+
+    </LinearLayout>
+
+
+</android.support.design.card.MaterialCardView>

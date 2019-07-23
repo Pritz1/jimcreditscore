@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:id="@+id/sv"
+android:layout_height="match_parent"
+tools:context=".java.EntDocListActivity"
+android:orientation="vertical">
+
+
+<android.support.design.card.MaterialCardView
+    android:id="@+id/materialCardView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardBackgroundColor="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/empname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:textColor="@color/textcolorwhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:id="@+id/ttldoc"
+                android:layout_marginBottom="@dimen/eight"
+                android:layout_marginRight="@dimen/eight"
+                android:layout_marginLeft="@dimen/eight"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textColor="@color/textcolorwhite"/>
+
+    </LinearLayout>
+</android.support.design.card.MaterialCardView>
+
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/doclist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="68dp"
+    android:layout_marginBottom="@dimen/sixteen"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/materialCardView2"
+    android:visibility="gone"/>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dp"
+        android:id="@+id/norecord"
+        android:src="@drawable/no_record_found_2"
+        android:scaleType="fitXY"
+        android:visibility="visible"/>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:weightSum="10">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryDark">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:id="@+id/heading"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                android:text="@string/scoreent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:layout_weight="8">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/sixteen"
+                android:layout_marginRight="@dimen/sixteen"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:weightSum="5">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="SCIENTIFIC"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="DETAILING SCALE"/>
+                </LinearLayout>
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:id="@+id/score"
+                    android:layout_marginLeft="@dimen/six"
+                    android:inputType="numberDecimal"
+                    android:layout_gravity="center"
+                    android:maxLength="6"
+                    android:hint="Enter Value" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/four"
+                android:layout_margin="@dimen/ten"
+                android:background="@drawable/border"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="@dimen/sixteen"
+                android:layout_marginLeft="@dimen/sixteen"
+                android:weightSum="5">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="AVG. BUSINESS"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:text="FOR MONTH"/>
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/mthscore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:hint="Enter Value"
+                    android:layout_marginLeft="@dimen/six"
+                    android:inputType="numberDecimal"
+                    android:layout_gravity="center"
+                    android:maxLength="6"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/yes"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorPrimaryDark">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:text="@string/submit"/>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:id="@+id/no"
+                android:layout_margin="16dp"
+                app:cardBackgroundColor="@color/colorAccent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    android:text="@string/cancel"/>
+
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.design.card.MaterialCardView>

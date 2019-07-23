@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="min_text_size">1sp</dimen>
+    <dimen name="max_text_size">25dp</dimen>
+    <dimen name="mid_text_size">18dp</dimen>
+    <dimen name="max_margin">16dp</dimen>
+    <dimen name="min_margin">8dp</dimen>
+    <dimen name="mid_margin">12dp</dimen>
+    <dimen name="max_padding">20dp</dimen>
+    <dimen name="draw_padding">15dp</dimen>
+    <dimen name="appnamesize">50dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="three">3dp</dimen>
+    <dimen name="four">4dp</dimen>
+    <dimen name="five">5dp</dimen>
+    <dimen name="six">6dp</dimen>
+    <dimen name="seven">7dp</dimen>
+    <dimen name="eight">8dp</dimen>
+    <dimen name="nine">9dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="eleven">11dp</dimen>
+    <dimen name="twelve">12dp</dimen>
+    <dimen name="thirteen">13dp</dimen>
+    <dimen name="fourteen">14dp</dimen>
+    <dimen name="fifteen">15dp</dimen>
+    <dimen name="sixteen">16dp</dimen>
+    <dimen name="seventeen">17dp</dimen>
+    <dimen name="eighteen">18dp</dimen>
+    <dimen name="nineteen">19dp</dimen>
+    <dimen name="twenty">20dp</dimen>
+    <dimen name="twentyone">21dp</dimen>
+    <dimen name="twentytwo">22dp</dimen>
+    <dimen name="twentythree">23dp</dimen>
+    <dimen name="twentyfour">24dp</dimen>
+</resources>

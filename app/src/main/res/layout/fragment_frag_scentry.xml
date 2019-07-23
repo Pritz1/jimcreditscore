@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_marginBottom="53dp"
+tools:context=".java.Frag_scentry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<pl.droidsonroids.gif.GifTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ee"/>-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/b4"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#33F7CB15">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/l2"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/ten">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_entry"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical|center"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
